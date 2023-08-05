@@ -1,0 +1,286 @@
+/* font faimly  */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 0px;
+}
+#logo {
+    margin-top: 3px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo h1{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+#logo img{
+    height: 47px;
+    width: 47px;
+}
+
+#navul ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+/* .item{
+    float: right;
+} */
+#navul ul li{
+    list-style: none;
+    font-size: 1.05rem;
+    display: flex;
+    
+} 
+
+ #navul ul li a{
+    color: white;
+     display: block;
+     padding: 3px 40px;
+     border-radius: 20px;
+     text-decoration: none;
+     font-family: 'Crimson Text', serif;
+    
+}
+#navul ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column; 
+    padding: 3px 200px;
+    /* margin-top: auto; */
+    height: 385px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+#home::before{
+    content: "";
+    background:url(images/bg5.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 435px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Caveat', cursive;
+
+}
+
+
+/* .btn{
+    margin-top: 10px;
+    padding: 6px 20px;
+    border: 2px soild white;
+    background-color: rgb(243, 191, 127);
+    border-radius: 10px;
+    
+} */
+         
+.btn {
+    background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
+    margin: 10px;
+    padding: 11px 26px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .services-container{
+    background-color: #f8f6e271;
+  }
+
+.services{
+    margin: 10px;
+    display: flex;
+}
+
+.services .box{
+    border: 2px solid brown;
+    margin: 6px;
+    padding: 20px;
+    border-radius: 23px;
+    font-family: 'Caveat', cursive;
+    font-size: 13px;
+    background-color: #f3f3f3;
+}
+.services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+.client-section{
+    position: relative;
+    /* height: 270px; */
+}
+
+.client-section::before{
+    content: "";
+    position: absolute;
+    background: url(images/New_folder/tomato.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item{
+    padding:34px;
+}
+
+.clients img{
+    height: 60px;
+}
+
+/* Contact Section  */
+.contact{
+    position: relative;
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.75;
+    background: url(images/contactUs7.jpg) no-repeat center center/cover;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contact-box input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #dff1f2ba;
+}
+
+.contact-box form{
+    width: 40%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Crimson Text', serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px;
+}
+/* utility classes  */
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 2.5rem;
+    padding-top: 12px;
+    font-family: 'Crimson Text', serif;
+}
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+
+/* For animation  */
+.linear-wipe {
+    padding-left: 7px;
+  background-image: linear-gradient(
+    -225deg,
+    #e3def3 0%,
+    #98efad 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  /* background-size: auto auto;
+  background-clip: border-box; */
+  background-size: 200% auto;
+  /* color: #fff;
+  background-clip: text;
+  text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 19px;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
