@@ -108,7 +108,7 @@
     color:white;
     text-align: center;
     font-size: 1rem;
-/*     font-family: 'Caveat', cursive; */
+    font-family: 'Pacifico';
 
 }
 
@@ -158,7 +158,7 @@
     margin: 6px;
     padding: 20px;
     border-radius: 23px;
-    font-family: 'Caveat', cursive;
+    font-family: inherit;
     font-size: 13px;
     background-color: #f3f3f3;
 }
@@ -251,7 +251,7 @@ footer{
 .h-secondary{
     font-size: 1.5rem;
     padding: 12px;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Pacifico';
     
 }
 
